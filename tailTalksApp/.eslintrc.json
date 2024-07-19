@@ -10,9 +10,11 @@
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:import/typescript",
+    "plugin:@typescript-eslint/recommended",
     "plugin:react-hooks/recommended",
     "prettier"
   ],
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -25,6 +27,7 @@
     "jsx-a11y",
     "import",
     "react-hooks",
+    "@typescript-eslint",
     "prettier"
   ],
   "rules": {
@@ -32,14 +35,16 @@
       "error",
       {
         "singleQuote": false,
-        "semi": true,
+        "semi": false,
         "trailingComma": "all",
         "arrowParens": "avoid",
         "endOfLine": "auto"
       }
     ],
     "react/react-in-jsx-scope": "off",
-    "react/prop-types": "off"
+    "react/prop-types": "off",
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/explicit-module-boundary-types": "off"
   },
   "settings": {
     "react": {
