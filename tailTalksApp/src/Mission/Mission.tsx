@@ -3,7 +3,7 @@ import Carousel from "./Carousel/Carousel"
 
 const Mission: React.FC = () => {
   return (
-    <div className="w-full">
+    <div className="mb-[120px] w-full">
       <Carousel />
     </div>
   )

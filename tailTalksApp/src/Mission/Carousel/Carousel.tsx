@@ -35,72 +35,80 @@ const Carousel: React.FC = () => {
       </div>
       <div className="overflow-hidden">
         <Slider ref={sliderRef} {...settings}>
-          <div className="mr-[30px] flex justify-center">
-            <div className="max-w-sm rounded bg-gray-800 p-6 shadow-lg">
-              <img
-                className="h-[250px] w-[355px] rounded-[20px]"
-                src={pic1}
-                alt="image1"
-              ></img>
-              <div className="">
-                <div className="mb-2 text-[25px] font-semibold leading-[40px] text-white">
-                  Объединить
+          <div className="">
+            <div className="mission__slider-card mr-[30px]">
+              <div className="mission__slider-card-inner flex h-[515px] w-[407px] flex-col items-center">
+                <img
+                  className="mission__slider-card mb-[28px] h-[250px] w-[355px]"
+                  src={pic1}
+                  alt="image1"
+                ></img>
+                <div className="mb-auto flex flex-col items-center justify-center">
+                  <div className="mb-[17px] text-[25px] font-semibold leading-[40px] text-white">
+                    Объединить
+                  </div>
+                  <p className="text-center text-[20px] font-thin text-white">
+                    сообщество владельцев питомцев со всего мира
+                  </p>
                 </div>
-                <p className="text-base text-gray-400">
-                  сообщество владельцев питомцев со всего мира
-                </p>
               </div>
             </div>
           </div>
-          <div className="mr-[30px] flex justify-center">
-            <div className="max-w-sm rounded bg-gray-800 p-6 shadow-lg">
-              <img
-                className="h-[250px] w-[355px] rounded-[20px]"
-                src={pic2}
-                alt="image2"
-              ></img>
-              <div className="">
-                <div className="mb-2 text-[25px] font-semibold leading-[40px] text-white">
-                  Популяризировать
+          <div className="">
+            <div className="mission__slider-card mr-[30px]">
+              <div className="mission__slider-card-inner h-[515px] w-[407px] rounded-[20px]">
+                <img
+                  className="mission__slider-card mb-[28px] h-[250px] w-[355px]"
+                  src={pic2}
+                  alt="image2"
+                ></img>
+                <div className="mb-auto flex flex-col items-center justify-center">
+                  <div className="mb-[17px] text-[25px] font-semibold leading-[40px] text-white">
+                    Популяризировать
+                  </div>
+                  <p className="text-center text-[20px] font-thin text-white">
+                    технологии блокчейна — фото вашего питомца станет NFT!
+                  </p>
                 </div>
-                <p className="text-base text-gray-400">
-                  технологии блокчейна — фото вашего питомца станет NFT!
-                </p>
               </div>
             </div>
           </div>
-          <div className="mr-[30px] flex justify-center">
-            <div className="max-w-sm rounded bg-gray-800 p-6 shadow-lg">
-              <img
-                className="h-[250px] w-[355px] rounded-[20px]"
-                src={pic3}
-                alt="image3"
-              ></img>
-              <div className="">
-                <div className="mb-2 text-[25px] font-semibold leading-[40px] text-white">
-                  Создать
+          <div className="">
+            <div className="mission__slider-card mr-[30px]">
+              <div className="mission__slider-card-inner h-[515px] w-[407px] rounded-[20px]">
+                <img
+                  className="mission__slider-card mb-[28px] h-[250px] w-[355px]"
+                  src={pic3}
+                  alt="image3"
+                ></img>
+                <div className="mb-auto flex flex-col items-center justify-center">
+                  <div className="mb-[17px] text-[25px] font-semibold leading-[40px] text-white">
+                    Создать
+                  </div>
+                  <p className="text-center text-[20px] font-thin text-white">
+                    безопасное и интерактивное пространство для общения и обмена
+                    опытом
+                  </p>
                 </div>
-                <p className="text-base text-gray-400">
-                  безопасное и интерактивное пространство для общения и обмена
-                  опытом
-                </p>
               </div>
             </div>
           </div>
-          <div className="mr-[30px] flex justify-center">
-            <div className="max-w-sm rounded bg-gray-800 p-6 shadow-lg">
-              <img
-                className="h-[250px] w-[355px] rounded-[20px]"
-                src={pic4}
-                alt="image4"
-              ></img>
-              <div className="">
-                <div className="mb-2 text-[25px] font-semibold leading-[40px] text-white">
-                  Поддержать
+          <div className="">
+            <div className="mission__slider-card mr-[30px]">
+              <div className="mission__slider-card-inner h-[515px] w-[407px] rounded-[20px]">
+                <img
+                  className="mission__slider-card mb-[28px] h-[250px] w-[355px]"
+                  src={pic4}
+                  alt="image4"
+                ></img>
+                <div className="mb-auto flex flex-col items-center justify-center">
+                  <div className="mb-[17px] text-[25px] font-semibold leading-[40px] text-white">
+                    Поддержать
+                  </div>
+                  <p className="text-center text-[20px] font-thin text-white">
+                    благотворительные инициативы, помогающие животным в беде
+                  </p>
                 </div>
-                <p className="text-base text-gray-400">
-                  благотворительные инициативы, помогающие животным в беде
-                </p>
               </div>
             </div>
           </div>
