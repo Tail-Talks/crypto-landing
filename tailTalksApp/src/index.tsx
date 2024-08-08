@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client"
 import "./index.css"
 import Header from "./Header/Header"
 import Main from "./Main/Main"
+import Mission from "./Mission/Mission"
 
 const rootElement = document.getElementById("root")
 if (rootElement) {
@@ -11,6 +12,7 @@ if (rootElement) {
     <>
       <Header />
       <Main />
+      <Mission />
     </>,
   )
 } else {
