@@ -4,6 +4,7 @@ import "./index.css"
 import Header from "./Header/Header"
 import Main from "./Main/Main"
 import Mission from "./Mission/Mission"
+import Community from "./Community/Community"
 
 const rootElement = document.getElementById("root")
 if (rootElement) {
@@ -13,6 +14,7 @@ if (rootElement) {
       <Header />
       <Main />
       <Mission />
+      <Community />
     </>,
   )
 } else {
