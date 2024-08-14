@@ -39,8 +39,10 @@ module.exports = {
         sans: ["Poppins", ...defaultTheme.fontFamily.sans]
       },
       fontSize: {
+        '14': '14px',
         '16': '16px',
         '18': '18px',
+        '20': '20px',
         '25': '25px',
         '30': '30px',
         "35": "35px",
@@ -56,9 +58,13 @@ module.exports = {
         "7": "1.875rem",	//30px
         "10": "2.5rem", //40px
         "11": "2.81rem", //45px
+        "12": "3.13rem", //50px
+        "16": '3.94rem', //63px
+        "20": "4.4rem", //70px
         "24": "6rem", //96px
         "36": "9.5rem", //152px
         "48": "11.81rem", //189px
+        "52": "12.06rem" //193px
       },
     },
   },
