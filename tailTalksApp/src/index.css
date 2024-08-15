@@ -209,4 +209,12 @@ code {
     background-clip: border-box;
     z-index: -1;
   }
+
+  /* Стили блока Philosophy */
+
+  .custom-border {
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
 }

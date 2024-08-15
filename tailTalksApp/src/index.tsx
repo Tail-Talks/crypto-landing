@@ -5,6 +5,7 @@ import Header from "./Header/Header"
 import Main from "./Main/Main"
 import Mission from "./Mission/Mission"
 import Community from "./Community/Community"
+import Philosophy from "./Philosophy/Philosophy"
 
 const rootElement = document.getElementById("root")
 if (rootElement) {
@@ -15,6 +16,7 @@ if (rootElement) {
       <Main />
       <Mission />
       <Community />
+      <Philosophy />
     </>,
   )
 } else {
