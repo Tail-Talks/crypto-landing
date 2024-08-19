@@ -4,7 +4,13 @@ on:
   push:
     branches:
       - '**'
+    # paths:
+    #   - 'tailTalksApp/**' 
   pull_request:
+    branches:
+      - '**'
+    # paths:
+    #   - 'tailTalksApp/**' 
 
 jobs:
   lint_and_tests:
@@ -28,7 +34,7 @@ jobs:
     - name: Install dependencies
       run: |
         cd tailTalksApp
-        npm install
+        npm ci
 
     - name: Run linter
       run: |
