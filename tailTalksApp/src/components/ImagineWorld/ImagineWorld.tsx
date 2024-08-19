@@ -8,7 +8,7 @@ export default function ImagineWorld() {
           Представьте себе мир, где:
         </h2>
         <div>
-          <div className="mt-5 bg-colorNFTBase rounded-2xl">
+          <div className="mt-5 bg-color-nft-base rounded-2xl">
             <div className="xl:px-11 xl:py-6 lg:px-11 lg:py-7 xs:px-5 xs:py-6">
               <div className="flex items-center gap-3 pb-2 border-b border-white">
                 <p className="font-medium text-50 xs:text-30">01</p>
@@ -24,7 +24,7 @@ export default function ImagineWorld() {
             </div>
           </div>
 
-          <div className="bg-colorNFTBase-reverse mt-7 xs:mt-5 rounded-2xl">
+          <div className="bg-color-nft-base-reverse mt-7 xs:mt-5 rounded-2xl">
             <div className="xl:px-11 xl:py-6 lg:px-11 lg:py-7 xs:px-5 xs:py-6">
               <div className="flex items-center gap-3 pb-2 border-b border-white">
                 <p className="font-medium text-50 xs:text-30">02</p>
@@ -39,7 +39,7 @@ export default function ImagineWorld() {
             </div>
           </div>
 
-          <div className="bg-colorNFTBase mt-7 xs:mt-5 rounded-2xl">
+          <div className="bg-color-nft-base mt-7 xs:mt-5 rounded-2xl">
             <div className="xl:px-11 xl:py-6 lg:px-11 lg:py-7 xs:px-5 xs:py-6">
               <div className="flex items-center gap-3 pb-2 border-b border-white">
                 <p className="font-medium text-50 xs:text-30">03</p>
