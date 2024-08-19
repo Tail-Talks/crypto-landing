@@ -1,21 +1,24 @@
 name: Lint and Test
 
 on:
-  push: # Запуск при каждом пуше в любую ветку
+  push:
     branches:
-      - '**' # Включает все ветки
-  pull_request: # Запуск при создании pull request
+      - '**'
+  pull_request:
 
 jobs:
   lint_and_tests:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [14, 16, 18] # Тестирование на нескольких версиях Node.js
+        node-version: [14, 16, 18]
 
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
+
+    - name: Change directory to tailTalksApp
+      run: cd tailTalksApp
 
     - name: Setup Node.js
       uses: actions/setup-node@v3
@@ -23,10 +26,16 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     - name: Install dependencies
-      run: npm install
+      run: |
+        cd tailTalksApp
+        npm install
 
     - name: Run linter
-      run: npm run lint
+      run: |
+        cd tailTalksApp
+        npm run lint
 
     - name: Run tests
-      run: npm run test
+      run: |
+        cd tailTalksApp
+        npm run test
