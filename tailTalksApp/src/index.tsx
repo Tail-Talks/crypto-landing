@@ -4,6 +4,7 @@ import "./index.css"
 import Header from "./Header/Header"
 import ImagineWorld from "./components/ImagineWorld/ImagineWorld"
 import DescTailTalks from "./components/DescTailTalks/DesTailTalks"
+import Counter from "./components/Counter/Counter"
 
 const rootElement = document.getElementById("root")
 if (rootElement) {
@@ -13,6 +14,7 @@ if (rootElement) {
       <Header />
       <ImagineWorld />
       <DescTailTalks />
+      <Counter />
     </React.StrictMode>,
   )
 } else {
