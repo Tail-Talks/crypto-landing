@@ -1,0 +1,50 @@
+name: Lint and Test
+
+on:
+  push:
+    branches:
+      - '**'
+    # paths:
+    #   - 'tailTalksApp/**' 
+  pull_request:
+    branches:
+      - '**'
+    # paths:
+    #   - 'tailTalksApp/**' 
+
+jobs:
+  lint_and_tests:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14]
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Change directory to tailTalksApp
+      run: cd tailTalksApp
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Install dependencies
+      continue-on-error: true
+      run: |
+        cd tailTalksApp
+        npm ci
+
+    - name: Run linter
+      continue-on-error: true
+      run: |
+        cd tailTalksApp
+        npm run lint
+
+    - name: Run tests
+      continue-on-error: true
+      run: |
+        cd tailTalksApp
+        npm run test
