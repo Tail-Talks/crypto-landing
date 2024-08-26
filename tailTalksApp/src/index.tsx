@@ -1,11 +1,11 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
 import "./index.css"
-import Header from "./Header/Header"
-import Main from "./Main/Main"
-import Mission from "./Mission/Mission"
-import Community from "./Community/Community"
-import Philosophy from "./Philosophy/Philosophy"
+import Header from "./components/Header/Header"
+import Main from "./components/Main/Main"
+import Mission from "./components/Mission/Mission"
+import Community from "./components/Community/Community"
+import Philosophy from "./components/Philosophy/Philosophy"
 
 const rootElement = document.getElementById("root")
 if (rootElement) {
