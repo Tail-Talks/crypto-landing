@@ -23,11 +23,11 @@ jobs:
         node-version: '14'
 
     - name: Install dependencies
-      run: npm install
+      run: npm ci 
       working-directory: ./tailTalksApp
 
     - name: Build project
-      continue-on-error: true
+      # continue-on-error: true
       run: npm run build
       working-directory: ./tailTalksApp
 
