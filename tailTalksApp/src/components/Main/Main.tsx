@@ -1,6 +1,6 @@
 import React from "react"
-import imageMainDogs from "../assets/mainDogs.png"
-import imageMainLera from "../assets/mainLera.png"
+import imageMainDogs from "../../assets/mainDogs.png"
+import imageMainLera from "../../assets/mainLera.png"
 
 const Main: React.FC = () => {
   return (
@@ -19,7 +19,7 @@ const Main: React.FC = () => {
         </button>
       </div>
       <div className="border-gradient flex h-[525px] w-[505px] items-center justify-center rounded-[20px]">
-        <div className="relative flex size-full flex-col items-center justify-center">
+        <div className="relative flex flex-col items-center justify-center size-full">
           <div className="image-container mb-[15px]">
             <img
               src={imageMainDogs}

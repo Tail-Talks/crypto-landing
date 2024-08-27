@@ -2,10 +2,10 @@ import React, { useRef } from "react"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
-import pic1 from "../../assets/mission-pic1.jpeg"
-import pic2 from "../../assets/mission-pic2.jpeg"
-import pic3 from "../../assets/mission-pic3.jpeg"
-import pic4 from "../../assets/mission-pic4.jpeg"
+import pic1 from "../../../assets/mission-pic1.jpeg"
+import pic2 from "../../../assets/mission-pic2.jpeg"
+import pic3 from "../../../assets/mission-pic3.jpeg"
+import pic4 from "../../../assets/mission-pic4.jpeg"
 import NextArrow from "./NextArrow"
 import PrevArrow from "./PrevArrow"
 
@@ -43,7 +43,7 @@ const Carousel: React.FC = () => {
                   src={pic1}
                   alt="image1"
                 ></img>
-                <div className="mb-auto flex flex-col items-center justify-center">
+                <div className="flex flex-col items-center justify-center mb-auto">
                   <div className="mb-[17px] text-[25px] font-semibold leading-[40px] text-white">
                     Объединить
                   </div>
@@ -62,7 +62,7 @@ const Carousel: React.FC = () => {
                   src={pic2}
                   alt="image2"
                 ></img>
-                <div className="mb-auto flex flex-col items-center justify-center">
+                <div className="flex flex-col items-center justify-center mb-auto">
                   <div className="mb-[17px] text-[25px] font-semibold leading-[40px] text-white">
                     Популяризировать
                   </div>
@@ -81,7 +81,7 @@ const Carousel: React.FC = () => {
                   src={pic3}
                   alt="image3"
                 ></img>
-                <div className="mb-auto flex flex-col items-center justify-center">
+                <div className="flex flex-col items-center justify-center mb-auto">
                   <div className="mb-[17px] text-[25px] font-semibold leading-[40px] text-white">
                     Создать
                   </div>
@@ -101,7 +101,7 @@ const Carousel: React.FC = () => {
                   src={pic4}
                   alt="image4"
                 ></img>
-                <div className="mb-auto flex flex-col items-center justify-center">
+                <div className="flex flex-col items-center justify-center mb-auto">
                   <div className="mb-[17px] text-[25px] font-semibold leading-[40px] text-white">
                     Поддержать
                   </div>
