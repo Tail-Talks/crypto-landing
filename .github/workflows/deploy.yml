@@ -7,7 +7,7 @@ on:
       - main
     paths:
       - 'tailTalksApp/**'
-      # - '.github/workflows/deploy.yml'
+      - '.github/workflows/deploy.yml'
 
 jobs:
   build:
