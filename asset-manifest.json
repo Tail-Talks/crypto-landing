@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/crypto-landing-frontend/static/css/main.02de300f.css",
-    "main.js": "/crypto-landing-frontend/static/js/main.8d89b79a.js",
+    "main.js": "/crypto-landing-frontend/static/js/main.b8862b4c.js",
     "static/media/mission-pic4.jpeg": "/crypto-landing-frontend/static/media/mission-pic4.12d1d5d83c455a8d84e8.jpeg",
     "static/media/mission-pic3.jpeg": "/crypto-landing-frontend/static/media/mission-pic3.c19e4b326a8c674665c7.jpeg",
     "static/media/mission-pic2.jpeg": "/crypto-landing-frontend/static/media/mission-pic2.2560de068534d02fd840.jpeg",
@@ -13,10 +13,10 @@
     "static/media/slick.woff": "/crypto-landing-frontend/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/crypto-landing-frontend/index.html",
     "main.02de300f.css.map": "/crypto-landing-frontend/static/css/main.02de300f.css.map",
-    "main.8d89b79a.js.map": "/crypto-landing-frontend/static/js/main.8d89b79a.js.map"
+    "main.b8862b4c.js.map": "/crypto-landing-frontend/static/js/main.b8862b4c.js.map"
   },
   "entrypoints": [
     "static/css/main.02de300f.css",
-    "static/js/main.8d89b79a.js"
+    "static/js/main.b8862b4c.js"
   ]
 }
