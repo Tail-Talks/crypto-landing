@@ -1,6 +1,6 @@
 import React from "react"
-import imageMainDogs from "../assets/mainDogs.png"
-import imageMainLera from "../assets/mainLera.png"
+import imageMainDogs from "../../assets/mainDogs.png"
+import imageMainLera from "../../assets/mainLera.png"
 
 const Main: React.FC = () => {
   return (
