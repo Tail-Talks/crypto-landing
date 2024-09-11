@@ -58,15 +58,28 @@ const RoadMap = () => {
       setSelectedItem(roadmapData[currentVisibleIndex].id)
     }
   }
+  // функция для прокрутки с помощью клавиатуры
+  const handleKeyDown = (e: KeyboardEvent) => {
+    const container = containerRef.current
+    if (!container) return
 
+    const scrollAmount = 50 // Установите значение прокрутки при нажатии кнопки
+    if (e.key === "ArrowRight") {
+      container.scrollBy({ left: scrollAmount, behavior: "smooth" })
+    } else if (e.key === "ArrowLeft") {
+      container.scrollBy({ left: -scrollAmount, behavior: "smooth" })
+    }
+  }
   useEffect(() => {
     const container = containerRef.current
     if (container) {
       container.addEventListener("scroll", handleScroll)
+      container.addEventListener("keydown", handleKeyDown)
     }
     return () => {
       if (container) {
         container.removeEventListener("scroll", handleScroll)
+        container.removeEventListener("keydown", handleKeyDown)
       }
     }
   }, [selectedItem])
