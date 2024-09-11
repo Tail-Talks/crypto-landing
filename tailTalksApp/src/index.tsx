@@ -11,6 +11,7 @@ import ImagineWorld from "./components/ImagineWorld/ImagineWorld"
 import DescTailTalks from "./components/DescTailTalks/DesTailTalks"
 import Counter from "./components/Counter/Counter"
 import FAQ from "./components/FAQ/FAQ"
+import RoadMap from "./components/RoadMap/RoadMap"
 
 const rootElement = document.getElementById("root")
 if (rootElement) {
@@ -19,12 +20,13 @@ if (rootElement) {
     <>
       <Header />
       <Main />
+      <ImagineWorld />
       <Mission />
       <Community />
-      <Philosophy />
-      <ImagineWorld />
       <DescTailTalks />
       <Counter />
+      <Philosophy />
+      <RoadMap />
       <FAQ />
     </>,
   )
