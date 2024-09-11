@@ -60,6 +60,7 @@ module.exports = {
       spacing: {
         "0": "0",
         "2": "0.5rem", //8px
+        "3": "0.625rem", //10px
         "4": "1rem", //16px
         "5": "1.25rem", //20px
         "6": "1.5rem", //24px
@@ -81,6 +82,7 @@ module.exports = {
         "48": "11.81rem", //189px
         "52": "12.06rem", //193px
         "56": "13.94rem", //223px
+        "62": "19.5rem", //312px
         "64": "22.13rem", //354px
       },
       borderRadius: {
