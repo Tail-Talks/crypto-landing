@@ -7,7 +7,7 @@ on:
       - main
     paths:
       - 'tailTalksApp/**'
-      # - '.github/workflows/deploy.yml'
+      - '.github/workflows/deploy.yml'
 
 jobs:
   build:
@@ -20,14 +20,14 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '14'
+        node-version: '21.7.3'
 
     - name: Install dependencies
-      run: npm install
+      run: npm ci 
       working-directory: ./tailTalksApp
 
     - name: Build project
-      continue-on-error: true
+      # continue-on-error: true
       run: npm run build
       working-directory: ./tailTalksApp
 

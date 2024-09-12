@@ -43,7 +43,7 @@ const Carousel: React.FC = () => {
                   src={pic1}
                   alt="image1"
                 ></img>
-                <div className="mb-auto flex flex-col items-center justify-center">
+                <div className="flex flex-col items-center justify-center mb-auto">
                   <div className="mb-[17px] text-[25px] font-semibold leading-[40px] text-white">
                     Объединить
                   </div>
@@ -62,7 +62,7 @@ const Carousel: React.FC = () => {
                   src={pic2}
                   alt="image2"
                 ></img>
-                <div className="mb-auto flex flex-col items-center justify-center">
+                <div className="flex flex-col items-center justify-center mb-auto">
                   <div className="mb-[17px] text-[25px] font-semibold leading-[40px] text-white">
                     Популяризировать
                   </div>
@@ -81,7 +81,7 @@ const Carousel: React.FC = () => {
                   src={pic3}
                   alt="image3"
                 ></img>
-                <div className="mb-auto flex flex-col items-center justify-center">
+                <div className="flex flex-col items-center justify-center mb-auto">
                   <div className="mb-[17px] text-[25px] font-semibold leading-[40px] text-white">
                     Создать
                   </div>
@@ -101,7 +101,7 @@ const Carousel: React.FC = () => {
                   src={pic4}
                   alt="image4"
                 ></img>
-                <div className="mb-auto flex flex-col items-center justify-center">
+                <div className="flex flex-col items-center justify-center mb-auto">
                   <div className="mb-[17px] text-[25px] font-semibold leading-[40px] text-white">
                     Поддержать
                   </div>
