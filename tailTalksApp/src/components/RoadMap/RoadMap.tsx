@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react"
-import { Element } from "react-scroll"
+import { Element, Link, Events, scrollSpy, scroller } from "react-scroll"
 import { roadmapData } from "../../data/raodmap"
 
 const RoadMap = () => {
@@ -10,6 +10,45 @@ const RoadMap = () => {
   const startX = useRef(0)
   const scrollLeft = useRef(0)
 
+  useEffect(() => {
+    Events.scrollEvent.register("begin", (to, element) => {
+      console.log("begin", to, element)
+    })
+
+    Events.scrollEvent.register("end", (to, element) => {
+      console.log("end", to, element)
+    })
+
+    scrollSpy.update()
+
+    return () => {
+      Events.scrollEvent.remove("begin")
+      Events.scrollEvent.remove("end")
+    }
+  }, [])
+
+  const scrollToNext = () => {
+    const currentIndex = roadmapData.findIndex(item => item.id === selectedItem)
+    const nextIndex = (currentIndex + 1) % roadmapData.length
+
+    // скролл к сл.эелементу - scroller из react-scroll
+    scroller.scrollTo(roadmapData[nextIndex].id.toString(), {
+      duration: 500,
+      delay: 0,
+      smooth: "easeInOutQuart",
+      offset: 50,
+    })
+
+    setSelectedItem(roadmapData[nextIndex].id)
+  }
+
+  const handleSetActive = (to: string) => {
+    console.log(to)
+    const itemId = parseInt(to, 10)
+    if (itemId !== selectedItem) {
+      setSelectedItem(itemId)
+    }
+  }
   // функция когда пользователь кликает на элемент, чтобы прокрутить к нему
   const handleScrollTo = (index: number) => {
     setSelectedItem(roadmapData[index].id)
@@ -58,18 +97,19 @@ const RoadMap = () => {
       setSelectedItem(roadmapData[currentVisibleIndex].id)
     }
   }
-  // функция для прокрутки с помощью клавиатуры
+
   const handleKeyDown = (e: KeyboardEvent) => {
     const container = containerRef.current
     if (!container) return
 
-    const scrollAmount = 50 // Установите значение прокрутки при нажатии кнопки
+    const scrollAmount = 50
     if (e.key === "ArrowRight") {
       container.scrollBy({ left: scrollAmount, behavior: "smooth" })
     } else if (e.key === "ArrowLeft") {
       container.scrollBy({ left: -scrollAmount, behavior: "smooth" })
     }
   }
+
   useEffect(() => {
     const container = containerRef.current
     if (container) {
@@ -131,9 +171,16 @@ const RoadMap = () => {
             {/* Контрольные точки */}
             <div className="flex lg:gap-12 xs:gap-5 ">
               {roadmapData.map((quarter, index) => (
-                <button
+                <Link
                   key={quarter.id}
-                  className="z-10 flex flex-col items-center gap-5 rounded-sm"
+                  to={quarter.id.toString()}
+                  spy={true}
+                  smooth={true}
+                  offset={-180}
+                  duration={500}
+                  activeClass="active"
+                  onSetActive={handleSetActive}
+                  className="z-10 flex flex-col items-center gap-5 rounded-sm cursor-pointer"
                   onClick={() => handleScrollTo(index)}
                 >
                   <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
@@ -176,8 +223,9 @@ const RoadMap = () => {
                     </defs>
                   </svg>
                   <Element
+                    onClick={scrollToNext}
                     name={quarter.id.toString()}
-                    className="lg:w-64 xs:w-62"
+                    className="flex flex-col items-center lg:w-64 xs:w-62"
                   >
                     <h3 className="font-semibold lg:mb-9 xs:mb-5 text-20">
                       {quarter.title}
@@ -205,7 +253,7 @@ const RoadMap = () => {
                       ))}
                     </div>
                   </Element>
-                </button>
+                </Link>
               ))}
             </div>
           </div>
