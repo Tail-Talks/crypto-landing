@@ -1,0 +1,48 @@
+@keyframes glow-star {
+  0% {
+    opacity: 0.1;
+    transform: scale(1);
+    filter: drop-shadow(0 0 3px rgba(148, 0, 211, 0.8));
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+    filter: drop-shadow(0 0 3px rgba(148, 0, 211, 1));
+  }
+  100% {
+    opacity: 0.1;
+    transform: scale(1);
+    filter: drop-shadow(0 0 3px rgba(148, 0, 211, 0.8));
+  }
+}
+
+.animate-glow-star {
+  animation: glow-star 3s infinite;
+  transform: scale(calc(409 / 341));
+  transform-origin: center;
+}
+
+@keyframes changeGradient {
+  0% {
+    stop-color: #9b51e0;
+  }
+  20% {
+    stop-color: #3081ed;
+  }
+  80% {
+    stop-color: #b1b1b1;
+  }
+  100% {
+    stop-color: #ffffff;
+  }
+}
+
+.gradient-border stop {
+  animation: changeGradient 2.4s infinite alternate linear;
+}
+
+.exclusive-background {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../../assets/elipse-exclusive.svg");
+}

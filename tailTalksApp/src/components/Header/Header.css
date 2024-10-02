@@ -1,0 +1,32 @@
+.underline-gradient {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-gradient::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1.5px;
+  background: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.underline-gradient:hover::after {
+  background: #9b51e0;
+}
+
+.text-color {
+  background: none;
+  -webkit-background-clip: text;
+  transition: all 0.3s ease-in-out;
+  color: #9ca3af;
+}
+
+.text-color:hover {
+  color: transparent;
+  background: linear-gradient(to right, #9b51e0, #3081ed);
+  background-clip: text;
+}

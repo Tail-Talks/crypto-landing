@@ -13,6 +13,7 @@ import Counter from "./components/Counter/Counter"
 import FAQ from "./components/FAQ/FAQ"
 import Footer from "./components/Footer/Footer"
 import RoadMap from "./components/RoadMap/RoadMap"
+import Exclusive from "./components/Exclusive/Exclusive"
 
 const rootElement = document.getElementById("root")
 if (rootElement) {
@@ -28,6 +29,7 @@ if (rootElement) {
       <Counter />
       <Philosophy />
       <RoadMap />
+      <Exclusive />
       <FAQ />
       <Footer />
     </>,

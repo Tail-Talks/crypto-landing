@@ -1,4 +1,6 @@
 import React, { useState } from "react"
+import ImgMinus from "../../assets/philosophy-minus.svg"
+import ImgPlus from "../../assets/philosophy-plus.svg"
 
 const Philosophy: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null)
@@ -51,7 +53,7 @@ const Philosophy: React.FC = () => {
   ]
 
   return (
-    <div className="mb-[170px] flex min-h-screen flex-col items-center p-8">
+    <div className="flex min-h-screen flex-col items-center px-[24px] sm:px-[40px] lg:my-[120px] xl:my-[170px] xl:px-[80px]">
       <h3 className="bg-gradient-to-r from-[#9B51E0] to-[#3081ED] bg-clip-text text-center text-[26px] font-semibold leading-[82px] tracking-[-2px] text-transparent">
         Общие цели и философия
       </h3>
@@ -73,50 +75,15 @@ const Philosophy: React.FC = () => {
                 </span>
                 <span className="text-2xl">
                   {activeIndex === index ? (
-                    <svg
-                      width="32"
-                      height="32"
-                      viewBox="0 0 32 32"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M6.6665 16H25.3332"
-                        stroke="white"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
+                    <img src={ImgMinus} alt="ImgMinus" />
                   ) : (
-                    <svg
-                      width="32"
-                      height="32"
-                      viewBox="0 0 32 32"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M6.6665 16H25.3332"
-                        stroke="white"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M16 6.66667V25.3333"
-                        stroke="white"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
+                    <img src={ImgPlus} alt="ImgPlus" />
                   )}
                 </span>
               </div>
             </div>
             <div
-              className={`custom-border overflow-hidden rounded-b-[10px] transition-[max-height] duration-300 ease-in-out ${
+              className={`overflow-hidden rounded-[10px] rounded-t-none transition-[max-height] duration-300 ease-in-out ${
                 activeIndex === index ? "max-h-96" : "max-h-0 rounded-t-[-20px]"
               }`}
             >

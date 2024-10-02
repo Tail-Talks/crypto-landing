@@ -1,3 +1,5 @@
+import "../Mission.css"
+
 const NextArrow = ({ onClick }: { onClick: () => void }) => {
   return (
     <button
