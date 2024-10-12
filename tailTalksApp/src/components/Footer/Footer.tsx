@@ -8,8 +8,8 @@ import Tg from "../../assets/social-tg.svg"
 
 const Footer: React.FC = () => {
   return (
-    <div className="flex h-[267px] flex-col sm:h-auto sm:px-[24px] lg:px-[40px] xl:px-[80px]">
-      <div className="relative w-full before:absolute before:left-0 before:top-0 before:h-px before:w-full before:bg-gradient-to-r before:from-[#9B51E0] before:to-[#3081ED]">
+    <div className="xs:py-7 xs:px-6 flex h-[267px] flex-col sm:h-auto sm:px-[24px] lg:px-[40px] xl:px-[80px]">
+      <div className="xs:before:hidden relative w-full before:absolute before:left-0 before:top-0 before:h-px before:w-full before:bg-gradient-to-r before:from-[#9B51E0] before:to-[#3081ED]">
         <div className="flex min-h-[215px] w-full flex-col justify-between sm:h-auto sm:flex-col md:py-[30px] lg:py-[40px]">
           <div className="w-full justify-between md:hidden lg:flex lg:items-center">
             <img
@@ -94,7 +94,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
 
-      <div className="relative flex w-full justify-between py-[30px] pt-[35px] before:absolute before:left-0 before:top-0 before:h-px before:w-full before:bg-gradient-to-r before:from-[#9B51E0] before:to-[#3081ED]">
+      <div className="xs:before:hidden relative flex w-full justify-between py-[30px] pt-[35px] before:absolute before:left-0 before:top-0 before:h-px before:w-full before:bg-gradient-to-r before:from-[#9B51E0] before:to-[#3081ED]">
         <span className="text-[14px] leading-[150%] text-white">
           © 2024 Tail Talks. All Rights Reserved.
         </span>
