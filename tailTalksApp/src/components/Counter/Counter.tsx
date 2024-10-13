@@ -3,11 +3,11 @@ import TimeDisplay from "../TimeDisplay/TimeDisplay"
 
 export default function Counter() {
   return (
-    <section id="counter" className="w-full mx-auto xs:mt-28 lg:mt-30 xl:mt-42">
-      <div className="flex flex-col items-center justify-center font-sans text-white rounded-lg xl:mx-52 lg:mx-30 xs:mx-6 lg:bg-background-nft-base">
+    <section id="counter" className="mx-auto w-full xs:mt-28 lg:mt-30 xl:mt-42">
+      <div className="flex flex-col items-center justify-center rounded-lg font-sans text-white xs:mx-6 lg:mx-30 lg:bg-background-nft-base xl:mx-52">
         <div className="lg:mt-12">
           <svg
-            className="xs:w-[70px] xs:h-[70px]"
+            className="xs:size-[70px]"
             width="122"
             height="117"
             viewBox="0 0 122 117"
@@ -63,17 +63,17 @@ export default function Counter() {
             />
           </svg>
         </div>
-        <div className="flex flex-col items-center xs:px-6 px-22 lg:px-12">
+        <div className="flex flex-col items-center px-22 xs:px-6 lg:px-12">
           <div className="text-center">
-            <h3 className="font-semibold text-center text-30 lg:text-25 xs:mt-5 lg:mt-7">
+            <h3 className="text-center text-30 font-semibold xs:mt-5 lg:mt-7 lg:text-25">
               Отсчет времени до запуска нашей социальной сети{" "}
-              <span className="text-transparent bg-color-nft-base bg-clip-text">
+              <span className="bg-color-nft-base bg-clip-text text-transparent">
                 Tail Talks
               </span>{" "}
               начался!
             </h3>
             {/* текст для расширений от 1024 */}
-            <p className="hidden text-center lg:block lg:text-20 lg:mt-4">
+            <p className="hidden text-center lg:mt-4 lg:block lg:text-20">
               Следите за запуском нашей уникальной социальной сети для питомцев,
               где каждый момент с вашим любимцем превращается в ценность. Не
               пропустите эксклюзивную предпродажу NFT и пресейл токенов Tail
@@ -81,7 +81,7 @@ export default function Counter() {
               взаимодействия с питомцами!
             </p>
             {/* текст для расширения 360 */}
-            <p className="block px-6 lg:hidden text-16 xs:mt-6">
+            <p className="block px-6 text-16 xs:mt-6 lg:hidden">
               Следите за запуском нашей уникальной социальной сети для питомцев.
               Будьте в числе первых, кто откроет для себя новые горизонты
               взаимодействия с питомцами!

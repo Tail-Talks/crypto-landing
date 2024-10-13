@@ -23,7 +23,7 @@ const Header: React.FC = () => {
   }, [openBurgerMenu])
 
   return (
-    <div className="xs:mt-10 xs:mb-7 w-full px-[24px] sm:mb-[78px] sm:px-[40px] xl:mt-12 xl:px-[80px]">
+    <div className="w-full px-[24px] xs:mb-7 xs:mt-10 sm:mb-[78px] sm:px-[40px] xl:mt-12 xl:px-[80px]">
       <header className="relative flex w-full items-center justify-between">
         <img
           src={Logo}
@@ -31,7 +31,7 @@ const Header: React.FC = () => {
           className={`${openBurgerMenu ? "hidden" : "block"} z-0 h-[22px] sm:mr-12 sm:w-[148px] xl:mr-28 xl:w-[179px]`}
         />
 
-        <div className="xs:hidden z-0 sm:block">
+        <div className="z-0 xs:hidden sm:block">
           <HeaderNavMenu />
         </div>
 
@@ -44,7 +44,7 @@ const Header: React.FC = () => {
         )}
 
         <button
-          className="sm:xs:hidden z-20 flex h-[18px] w-[27px] flex-col justify-between"
+          className="z-20 flex h-[18px] w-[27px] flex-col justify-between sm:xs:hidden"
           onClick={toggleBurgerMenu}
         >
           <span

@@ -69,12 +69,12 @@ export default function TimeDisplay() {
   }: TimeUnitProps) {
     return (
       <div
-        className={`flex flex-col items-center justify-center px-10  xs:px-5  ${
-          showBorderLg ? "lg:border-r border-white" : ""
-        } ${showBorderXs ? "xs:border-r border-white" : ""} xs:w-28 lg:w-42`}
+        className={`flex flex-col items-center justify-center px-10 xs:px-5 ${
+          showBorderLg ? "border-white lg:border-r" : ""
+        } ${showBorderXs ? "border-white xs:border-r" : ""} xs:w-28 lg:w-42`}
       >
-        <span className="font-semibold text-60 xl:text-70">{value}</span>
-        <span className="font-light text-16">
+        <span className="text-60 font-semibold xl:text-70">{value}</span>
+        <span className="text-16 font-light">
           {timeFormat(value, singular, few, many)}
         </span>
       </div>
@@ -106,7 +106,7 @@ export default function TimeDisplay() {
         many="минут"
         showBorderLg
       />
-      <div className="lg:block xs:hidden">
+      <div className="xs:hidden lg:block">
         <TimeUnit
           value={timeLeft.seconds}
           singular="секунда"

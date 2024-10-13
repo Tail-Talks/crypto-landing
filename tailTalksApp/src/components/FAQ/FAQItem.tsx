@@ -14,17 +14,17 @@ export default function FAQItem({
   onToggle,
 }: FAQItemProps) {
   return (
-    <div className="p-[1px] rounded-sm bg-gradient-to-r from-[#564e5d] to-[#3081ED] mb-4 lg:mx-34 xs:mx-6 xl:mx-64">
-      <div className="bg-[#1f1d2b] rounded-sm">
+    <div className="mb-4 rounded-sm bg-gradient-to-r from-[#564e5d] to-[#3081ED] p-px xs:mx-6 lg:mx-34 xl:mx-64">
+      <div className="rounded-sm bg-[#1f1d2b]">
         <button
           type="button"
-          className="w-full lg:px-6 xs:px-2 lg:pt-6 xs:pt-5"
+          className="w-full xs:px-2 xs:pt-5 lg:px-6 lg:pt-6"
           aria-expanded={isOpen}
           onClick={onToggle}
         >
           {isOpen ? (
             <div className="flex items-center justify-between">
-              <span className="w-[80%] text-left text-transparent lg:font-semibold xs:font-medium xs:text-15 lg:text-18 bg-color-nft-base bg-clip-text">
+              <span className="w-4/5 bg-color-nft-base bg-clip-text text-left text-transparent xs:text-15 xs:font-medium lg:text-18 lg:font-semibold">
                 {question}
               </span>
               <svg
@@ -44,8 +44,8 @@ export default function FAQItem({
               </svg>
             </div>
           ) : (
-            <div className="flex items-center justify-between lg:pb-6 xs:pb-5">
-              <span className="w-[80%] text-left lg:font-semibold xs:font-medium xs:text-15 lg:text-18">
+            <div className="flex items-center justify-between xs:pb-5 lg:pb-6">
+              <span className="w-4/5 text-left xs:text-15 xs:font-medium lg:text-18 lg:font-semibold">
                 {question}
               </span>
               <svg
@@ -64,7 +64,7 @@ export default function FAQItem({
           )}
         </button>
         {isOpen && (
-          <div className="lg:pt-6 lg:px-6 xs:px-2 xs:pb-5 xs:pt-2">
+          <div className="xs:px-2 xs:pb-5 xs:pt-2 lg:px-6 lg:pt-6">
             <p className="font-normal xs:text-13 lg:text-16">{answer}</p>
           </div>
         )}

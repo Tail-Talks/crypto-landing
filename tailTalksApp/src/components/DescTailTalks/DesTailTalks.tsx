@@ -3,12 +3,12 @@ import React from "react"
 export default function DescTailTalks() {
   return (
     <section id="desc-tail-talks" className="mx-auto mt-24 lg:mt-20 xl:mt-24">
-      <div className="flex flex-col max-w-full mx-6 font-sans text-white xl:mx-52 lg:mx-16">
-        <h2 className="font-semibold text-center text-25 xl:text-40 lg:text-30">
+      <div className="mx-6 flex max-w-full flex-col font-sans text-white lg:mx-16 xl:mx-52">
+        <h2 className="text-center text-25 font-semibold lg:text-30 xl:text-40">
           TailTalks - это не просто социальная сеть, это:
         </h2>
-        <div className="grid gap-12 lg:grid-cols-2 xs:grid-cols-1 mt-7 lg:mt-12">
-          <div className="flex flex-col w-full gap-5 px-4 lg:flex-row">
+        <div className="mt-7 grid gap-12 xs:grid-cols-1 lg:mt-12 lg:grid-cols-2">
+          <div className="flex w-full flex-col gap-5 px-4 lg:flex-row">
             <div className="flex justify-center xs:mb-7 xl:mb-0">
               <svg
                 width="70"
@@ -38,7 +38,7 @@ export default function DescTailTalks() {
               </svg>
             </div>
             <div className="text-center lg:text-left">
-              <h3 className="font-semibold text-18 xl:text-20">
+              <h3 className="text-18 font-semibold xl:text-20">
                 WEB 3.0 сообщество
               </h3>
               <p className="mt-4 text-16 xl:text-18">
@@ -48,7 +48,7 @@ export default function DescTailTalks() {
               </p>
             </div>
           </div>
-          <div className="flex flex-col w-full gap-5 px-4 lg:flex-row">
+          <div className="flex w-full flex-col gap-5 px-4 lg:flex-row">
             <div className="flex justify-center xs:mb-7 xl:mb-0">
               <svg
                 width="70"
@@ -78,7 +78,7 @@ export default function DescTailTalks() {
               </svg>
             </div>
             <div className="text-center lg:text-left">
-              <h3 className="font-semibold text-18 xl:text-20">
+              <h3 className="text-18 font-semibold xl:text-20">
                 NFT-токены для ваших питомцев
               </h3>
               <p className="mt-4 text-16 xl:text-18">
@@ -87,7 +87,7 @@ export default function DescTailTalks() {
               </p>
             </div>
           </div>
-          <div className="flex flex-col w-full gap-5 px-4 lg:flex-row">
+          <div className="flex w-full flex-col gap-5 px-4 lg:flex-row">
             <div className="flex justify-center xs:mb-7 xl:mb-0">
               <svg
                 width="70"
@@ -117,7 +117,7 @@ export default function DescTailTalks() {
               </svg>
             </div>
             <div className="text-center lg:text-left">
-              <h3 className="font-semibold text-18 xl:text-20">
+              <h3 className="text-18 font-semibold xl:text-20">
                 NFT-токены для ваших питомцев
               </h3>
               <p className="mt-4 text-16 xl:text-18">
@@ -126,7 +126,7 @@ export default function DescTailTalks() {
               </p>
             </div>
           </div>
-          <div className="flex flex-col w-full gap-5 px-4 lg:flex-row">
+          <div className="flex w-full flex-col gap-5 px-4 lg:flex-row">
             <div className="flex justify-center xs:mb-7 xl:mb-0">
               <svg
                 width="70"
@@ -156,7 +156,7 @@ export default function DescTailTalks() {
               </svg>
             </div>
             <div className="text-center lg:text-left">
-              <h3 className="font-semibold text-18 xl:text-20">
+              <h3 className="text-18 font-semibold xl:text-20">
                 Инновационные функции
               </h3>
               <p className="mt-4 text-16 xl:text-18">
