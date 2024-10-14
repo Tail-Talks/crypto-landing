@@ -1,22 +1,35 @@
 {
   "files": {
-    "main.css": "/crypto-landing-frontend/static/css/main.02de300f.css",
-    "main.js": "/crypto-landing-frontend/static/js/main.b8862b4c.js",
+    "main.css": "/crypto-landing-frontend/static/css/main.a2a422f7.css",
+    "main.js": "/crypto-landing-frontend/static/js/main.57e50d47.js",
     "static/media/mission-pic4.jpeg": "/crypto-landing-frontend/static/media/mission-pic4.12d1d5d83c455a8d84e8.jpeg",
     "static/media/mission-pic3.jpeg": "/crypto-landing-frontend/static/media/mission-pic3.c19e4b326a8c674665c7.jpeg",
     "static/media/mission-pic2.jpeg": "/crypto-landing-frontend/static/media/mission-pic2.2560de068534d02fd840.jpeg",
     "static/media/mission-pic1.jpeg": "/crypto-landing-frontend/static/media/mission-pic1.0e7587ecf0943ef9f16a.jpeg",
+    "static/media/social-vc.svg": "/crypto-landing-frontend/static/media/social-vc.afe8dbaaca1d322ef81c15da16c5b0c1.svg",
     "static/media/mainDogs.png": "/crypto-landing-frontend/static/media/mainDogs.818ec2960fd8754e7bfa.png",
+    "static/media/elipse-exclusive.svg": "/crypto-landing-frontend/static/media/elipse-exclusive.d99029a722422824a981.svg",
+    "static/media/social-vk.svg": "/crypto-landing-frontend/static/media/social-vk.7927c7e8bc7b3ed76429cc3025fde22a.svg",
+    "static/media/social-dzen.svg": "/crypto-landing-frontend/static/media/social-dzen.d229de78fdd0d87955300cec45540ef5.svg",
+    "static/media/logo.svg": "/crypto-landing-frontend/static/media/logo.518857e91d55671d195eeb15179ffdfa.svg",
     "static/media/slick.svg": "/crypto-landing-frontend/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/crypto-landing-frontend/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/mainLike.svg": "/crypto-landing-frontend/static/media/mainLike.155f46c75773c8b5422d304c4825af40.svg",
     "static/media/slick.ttf": "/crypto-landing-frontend/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/social-link.svg": "/crypto-landing-frontend/static/media/social-link.c51ecd4bc8171f4d228becf84b80cd96.svg",
     "static/media/slick.woff": "/crypto-landing-frontend/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/social-tg.svg": "/crypto-landing-frontend/static/media/social-tg.c5a9721e09d5edf8561cf00734bae712.svg",
+    "static/media/elipse-cat-bg.svg": "/crypto-landing-frontend/static/media/elipse-cat-bg.55e06e410b65357ba7394c904dcf8892.svg",
+    "static/media/elipse-star-pic.svg": "/crypto-landing-frontend/static/media/elipse-star-pic.882580d0346d7e32c6e8c15d52c0134a.svg",
     "index.html": "/crypto-landing-frontend/index.html",
-    "main.02de300f.css.map": "/crypto-landing-frontend/static/css/main.02de300f.css.map",
-    "main.b8862b4c.js.map": "/crypto-landing-frontend/static/js/main.b8862b4c.js.map"
+    "static/media/header-small-arrow.svg": "/crypto-landing-frontend/static/media/header-small-arrow.51a9a65e4a6dc07d77404fd13a4da94b.svg",
+    "static/media/philosophy-plus.svg": "/crypto-landing-frontend/static/media/philosophy-plus.c9900add1afc072ff5d6037e5e34daaf.svg",
+    "static/media/philosophy-minus.svg": "/crypto-landing-frontend/static/media/philosophy-minus.dcd3e2a3af84b3055b132e01d9e09370.svg",
+    "main.a2a422f7.css.map": "/crypto-landing-frontend/static/css/main.a2a422f7.css.map",
+    "main.57e50d47.js.map": "/crypto-landing-frontend/static/js/main.57e50d47.js.map"
   },
   "entrypoints": [
-    "static/css/main.02de300f.css",
-    "static/js/main.b8862b4c.js"
+    "static/css/main.a2a422f7.css",
+    "static/js/main.57e50d47.js"
   ]
 }
