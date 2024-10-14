@@ -70,7 +70,7 @@ const Philosophy: React.FC = () => {
               className={`relative z-10 flex w-full items-center justify-between rounded-t-[10px] bg-[#1f1d2b] px-[24px] py-[22px] duration-500 ease-in-out ${activeIndex === index ? "" : "rounded-b-[10px]"}`}
             >
               <div className="flex w-full items-center justify-between text-white outline-none">
-                <span className="text-[18px] font-semibold leading-[150%] text-white">
+                <span className="text-18 font-semibold leading-[150%] text-white">
                   {item.title}
                 </span>
                 <span className="text-2xl">
@@ -88,7 +88,7 @@ const Philosophy: React.FC = () => {
               }`}
             >
               <div className="bg-[#1f1d2b] p-4">
-                <p className="text-left text-[15px] leading-[150%] text-white">
+                <p className="text-left text-15 leading-[150%] text-white">
                   {item.content}
                 </p>
               </div>

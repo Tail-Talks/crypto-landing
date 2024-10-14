@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react"
+import React, { useState, useRef, useEffect, useCallback } from "react"
 import { Element, Link, Events, scrollSpy, scroller } from "react-scroll"
 import { roadmapData } from "../../data/raodmap"
 
@@ -85,18 +85,18 @@ const RoadMap = () => {
     isDragging.current = false
   }
   // функция когда происходит прокрутка контейнера
-  const handleScroll = () => {
-    const container = containerRef.current
-    if (!container) return
+  // const handleScroll = () => {
+  //   const container = containerRef.current
+  //   if (!container) return
 
-    const scrollLeft = container.scrollLeft
-    const quarterWidth = container.scrollWidth / roadmapData.length
-    const currentVisibleIndex = Math.round(scrollLeft / quarterWidth)
+  //   const scrollLeft = container.scrollLeft
+  //   const quarterWidth = container.scrollWidth / roadmapData.length
+  //   const currentVisibleIndex = Math.round(scrollLeft / quarterWidth)
 
-    if (selectedItem !== roadmapData[currentVisibleIndex].id) {
-      setSelectedItem(roadmapData[currentVisibleIndex].id)
-    }
-  }
+  //   if (selectedItem !== roadmapData[currentVisibleIndex].id) {
+  //     setSelectedItem(roadmapData[currentVisibleIndex].id)
+  //   }
+  // }
 
   const handleKeyDown = (e: KeyboardEvent) => {
     const container = containerRef.current
@@ -110,6 +110,17 @@ const RoadMap = () => {
     }
   }
 
+  // функция когда происходит прокрутка контейнера
+  const handleScroll = useCallback(() => {
+    const container = containerRef.current
+    if (!container) return
+    const scrollLeft = container.scrollLeft
+    const quarterWidth = container.scrollWidth / roadmapData.length
+    const currentVisibleIndex = Math.round(scrollLeft / quarterWidth)
+    if (selectedItem !== roadmapData[currentVisibleIndex].id) {
+      setSelectedItem(roadmapData[currentVisibleIndex].id)
+    }
+  }, [selectedItem])
   useEffect(() => {
     const container = containerRef.current
     if (container) {
@@ -122,15 +133,15 @@ const RoadMap = () => {
         container.removeEventListener("keydown", handleKeyDown)
       }
     }
-  }, [selectedItem])
+  }, [handleScroll, selectedItem])
 
   return (
-    <section id="roadmap" className="lg:mt-36 xs:mt-28">
-      <div className="flex flex-col font-sans text-white xl:mx-48 lg:mx-10 xs:mx-6">
-        <h2 className="mb-3 font-semibold text-center xs:mb-4 text-40 lg:text-30 xs:text-25 ">
+    <section id="roadmap" className="xs:mt-28 lg:mt-36">
+      <div className="flex flex-col font-sans text-white xs:mx-6 lg:mx-10 xl:mx-48">
+        <h2 className="mb-3 text-center text-40 font-semibold xs:mb-4 xs:text-25 lg:text-30 ">
           Дорожная карта Tail Talks 2024!
         </h2>
-        <span className="mb-10 font-light text-center lg:mb-7 xs:mb-5 text-20 xs:text-16">
+        <span className="mb-10 text-center text-20 font-light xs:mb-5 xs:text-16 lg:mb-7">
           Отслеживайте развитие нашей социальной сети для животных
         </span>
 
@@ -138,7 +149,7 @@ const RoadMap = () => {
           ref={containerRef}
           role="listbox"
           tabIndex={0}
-          className="relative w-full mx-auto overflow-x-hidden scrollbar-hide"
+          className="relative mx-auto w-full overflow-x-hidden"
           onMouseDown={handleMouseDown}
           onMouseMove={handleMouseMove}
           onMouseUp={handleMouseUpOrLeave}
@@ -147,9 +158,9 @@ const RoadMap = () => {
         >
           <div className="relative w-max">
             {/* скролл */}
-            <div className="relative lg:mx-52 xs:mx-36">
+            <div className="relative xs:mx-36 lg:mx-52">
               {/* основной цвет */}
-              <div className="absolute w-full top-3.5 h-[2px] bg-white"></div>
+              <div className="absolute top-3.5 h-[2px] w-full bg-white"></div>
               {/* выделение */}
               <div
                 className="absolute top-3.5 h-[2px] bg-color-nft-base transition-all duration-300"
@@ -169,7 +180,7 @@ const RoadMap = () => {
             </div>
 
             {/* Контрольные точки */}
-            <div className="flex lg:gap-12 xs:gap-5 ">
+            <div className="flex xs:gap-5 lg:gap-12 ">
               {roadmapData.map((quarter, index) => (
                 <Link
                   key={quarter.id}
@@ -180,7 +191,7 @@ const RoadMap = () => {
                   duration={500}
                   activeClass="active"
                   onSetActive={handleSetActive}
-                  className="z-10 flex flex-col items-center gap-5 rounded-sm cursor-pointer"
+                  className="z-10 flex cursor-pointer flex-col items-center gap-5 rounded-sm"
                   onClick={() => handleScrollTo(index)}
                 >
                   <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
@@ -225,24 +236,21 @@ const RoadMap = () => {
                   <Element
                     onClick={scrollToNext}
                     name={quarter.id.toString()}
-                    className="flex flex-col items-center lg:w-64 xs:w-62"
+                    className="flex flex-col items-center xs:w-62 lg:w-64"
                   >
-                    <h3 className="font-semibold lg:mb-9 xs:mb-5 text-20">
+                    <h3 className="text-20 font-semibold xs:mb-5 lg:mb-9">
                       {quarter.title}
                     </h3>
-                    <div className="border-2 rounded-sm ">
+                    <div className="rounded-sm border-2 ">
                       {quarter.items.map((item, idx) => (
-                        <div
-                          key={idx}
-                          className="lg:my-10 xs:my-7 lg:mx-10 xs:mx-5"
-                        >
-                          <h4 className="mb-3 font-semibold text-left text-18 ">
+                        <div key={idx} className="xs:mx-5 xs:my-7 lg:m-10">
+                          <h4 className="mb-3 text-left text-18 font-semibold ">
                             {item.title}
                           </h4>
-                          <ul className="mt-3 text-left list-disc">
+                          <ul className="mt-3 list-disc text-left">
                             {item.tasks.map((task, taskIdx) => (
                               <li
-                                className="mx-5 font-light text-16"
+                                className="mx-5 text-16 font-light"
                                 key={taskIdx}
                               >
                                 {task}

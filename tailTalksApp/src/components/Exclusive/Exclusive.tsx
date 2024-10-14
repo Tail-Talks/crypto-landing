@@ -125,7 +125,7 @@ const Exclusive: React.FC = () => {
               </span>
               <a
                 href="https://t.me/tailtalkstg"
-                className="relative z-10 flex h-12 w-[263px] items-center justify-center rounded-2xl bg-[#1F1D2B] p-5 px-12 py-3 text-[18px] font-semibold leading-[150%] text-transparent transition-opacity duration-100 ease-in-out before:absolute before:inset-[-3px] before:z-[-1] before:rounded-2xl before:bg-gradient-to-r before:from-[#9B51E0] before:to-[#3081ED] before:content-[''] after:absolute after:inset-0 after:z-[-1] after:rounded-2xl after:bg-[#1f1d2b] after:content-[''] hover:opacity-70"
+                className="relative z-10 flex h-12 w-[263px] items-center justify-center rounded-2xl bg-[#1F1D2B] p-5 px-12 py-3 text-18 font-semibold leading-[150%] text-transparent transition-opacity duration-100 ease-in-out before:absolute before:inset-[-3px] before:z-[-1] before:rounded-2xl before:bg-gradient-to-r before:from-[#9B51E0] before:to-[#3081ED] before:content-[''] after:absolute after:inset-0 after:z-[-1] after:rounded-2xl after:bg-[#1f1d2b] after:content-[''] hover:opacity-70"
                 rel="noreferrer"
               >
                 <span className="bg-gradient-to-r from-[#9B51E0] to-[#3081ED] bg-clip-text text-transparent">

@@ -26,11 +26,11 @@ export default function EmailForm() {
 
   return (
     <div>
-      <p className="text-center text-14 xs:px-5 xs:mt-10 lg:mt-12">
+      <p className="text-center text-14 xs:mt-10 xs:px-5 lg:mt-12">
         Оставьте свой e-mail для предварительной регистрации
       </p>
       <form
-        className="xs:mt-4 lg:mt-5 flex flex-col items-center gap-2.5 xs:gap-5 lg:flex-row"
+        className="flex flex-col items-center gap-2.5 xs:mt-4 xs:gap-5 lg:mt-5 lg:flex-row"
         onSubmit={handleSubmit}
         noValidate
       >
@@ -40,13 +40,13 @@ export default function EmailForm() {
           type="email"
           autoComplete="email"
           placeholder="someaddress@gmail.com"
-          className="py-5 xs:w-full w-[60%] text-black rounded-sm border-black-80 px-3.5"
+          className="w-3/5 rounded-sm border-black px-3.5 py-5 text-black xs:w-full"
           value={email}
           onChange={e => setEmail(e.target.value)}
         />
         <button
           type="submit"
-          className="flex items-center justify-center flex-1 py-5 font-bold rounded-sm xs:w-full w-[40%] px-9 bg-color-nft-base text-18 xs:text-16"
+          className="flex w-2/5 flex-1 items-center justify-center rounded-sm bg-color-nft-base px-9 py-5 text-18 font-bold xs:w-full xs:text-16"
         >
           {isSubmitted ? (
             <svg
@@ -67,7 +67,7 @@ export default function EmailForm() {
         </button>
       </form>
       {error && (
-        <p className="mt-5 text-center text-red-400 xs:px-6 text-14 xs:text-12">
+        <p className="mt-5 text-center text-14 text-red-400 xs:px-6 xs:text-12">
           {error}
         </p>
       )}

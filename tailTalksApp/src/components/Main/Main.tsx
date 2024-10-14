@@ -16,23 +16,23 @@ const Main: React.FC = () => {
           и&nbsp;их&nbsp;владельцев, где каждый питомец заслуживает стать
           звездой
         </p>
-        <button className="h-[60px] rounded-[15px] bg-[#9B51E0] bg-gradient-to-r from-[#9B51E0] to-[#3081ED] text-[22px] font-semibold leading-[36px] text-white transition-all duration-300 hover:opacity-75 sm:w-[250px] lg:w-[407px]">
+        <button className="h-[60px] rounded-sm bg-[#9B51E0] bg-gradient-to-r from-[#9B51E0] to-[#3081ED] text-[22px] font-semibold leading-[36px] text-white transition-all duration-300 hover:opacity-75 sm:w-[250px] lg:w-[407px]">
           Узнать подробнее
         </button>
       </div>
-      <div className="border-gradient flex items-center justify-center rounded-[20px] sm:max-h-[431px] sm:min-w-[395px] xl:min-h-[525px] xl:min-w-[505px]">
+      <div className="border-gradient flex items-center justify-center rounded-md sm:max-h-[431px] sm:min-w-[395px] xl:min-h-[525px] xl:min-w-[505px]">
         <div className="relative flex size-full flex-col items-center justify-center p-[25px]">
-          <div className="z-[2] mb-2 rounded-[20px] before:absolute before:inset-0 before:z-[-1] before:bg-[#3081ed] before:opacity-5 before:content-[''] sm:pt-4 xl:mb-4 xl:pt-0">
+          <div className="z-[2] mb-2 rounded-md before:absolute before:inset-0 before:z-[-1] before:bg-[#3081ed] before:opacity-5 before:content-[''] sm:pt-4 xl:mb-4 xl:pt-0">
             <img
               src={imageMainDogs}
               alt="Ваш питомец"
-              className="rounded-[20px] sm:h-[356px] sm:w-[374px] xl:h-[402px] xl:w-[448px]"
+              className="rounded-md sm:h-[356px] sm:w-[374px] xl:h-[402px] xl:w-[448px]"
             />
             <div className="pointer-events-none absolute left-[-45px] top-[-60px] z-[-1] size-[123px] rounded-full bg-[radial-gradient(circle,_rgba(169,_42,_162,_0.5),_#f62cf680)] opacity-70 blur-[55px]"></div>
             <div className="pointer-events-none absolute bottom-[-90px] right-[-45px] z-[-1] size-[123px] rounded-full bg-[radial-gradient(circle,_rgba(62,_131,_234,_0.5),_rgba(48,_129,_237,_0.5))] opacity-70 blur-[55px]"></div>
           </div>
           <div className="flex h-[50px] items-center justify-between px-[15px] sm:h-[356px] sm:w-[374px] sm:pb-3 xl:h-[402px] xl:w-[448px] xl:pb-0">
-            <button className="z-10 flex items-center justify-center rounded bg-transparent text-[16px] font-semibold leading-[24px] text-white transition duration-300 hover:opacity-75">
+            <button className="z-10 flex items-center justify-center rounded bg-transparent text-16 font-semibold leading-[24px] text-white transition duration-300 hover:opacity-75">
               <img
                 src={imageMainLera}
                 alt="Аватар Леры"
@@ -40,7 +40,7 @@ const Main: React.FC = () => {
               />
               ЛЕРА
             </button>
-            <button className="z-10 flex items-center justify-center rounded bg-transparent text-[16px] leading-[24px] text-white transition duration-300 hover:opacity-75">
+            <button className="z-10 flex items-center justify-center rounded bg-transparent text-16 leading-[24px] text-white transition duration-300 hover:opacity-75">
               <img src={imageMainLike} alt="imageMainLike" className="mr-2" />
               338
             </button>

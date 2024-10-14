@@ -8,8 +8,8 @@ import Tg from "../../assets/social-tg.svg"
 
 const Footer: React.FC = () => {
   return (
-    <div className="xs:py-7 xs:px-6 flex h-[267px] flex-col sm:h-auto sm:px-[24px] lg:px-[40px] xl:px-[80px]">
-      <div className="xs:before:hidden relative w-full before:absolute before:left-0 before:top-0 before:h-px before:w-full before:bg-gradient-to-r before:from-[#9B51E0] before:to-[#3081ED]">
+    <div className="flex h-[267px] flex-col xs:px-6 xs:py-7 sm:h-auto sm:px-[24px] lg:px-[40px] xl:px-[80px]">
+      <div className="relative w-full before:absolute before:left-0 before:top-0 before:h-px before:w-full before:bg-gradient-to-r before:from-[#9B51E0] before:to-[#3081ED] xs:before:hidden">
         <div className="flex min-h-[215px] w-full flex-col justify-between sm:h-auto sm:flex-col md:py-[30px] lg:py-[40px]">
           <div className="w-full justify-between md:hidden lg:flex lg:items-center">
             <img
@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
               className="h-[22px] w-[179px] sm:mb-[20px] md:hidden lg:block"
             />
             <nav className="flex items-center sm:mb-[20px] xl:mr-[130px]">
-              <ul className="flex flex-col font-semibold text-white sm:flex-row lg:text-[14px] lg:leading-[21px] xl:text-[16px] xl:leading-[150%]">
+              <ul className="flex flex-col font-semibold text-white sm:flex-row lg:text-14 lg:leading-[21px] xl:text-16 xl:leading-[150%]">
                 <li className="mr-[40px] hover:opacity-70 sm:mb-[10px] md:mr-[15px]">
                   <a href="#mission">Наша миссия</a>
                 </li>
@@ -67,14 +67,14 @@ const Footer: React.FC = () => {
 
           <div className="flex w-full flex-col justify-between sm:flex-row xl:pl-[330px]">
             <div className="flex w-fit flex-col">
-              <span className="mb-[10px] text-[16px] font-medium text-white">
+              <span className="mb-[10px] text-16 font-medium text-white">
                 Свяжитесь с нами:
               </span>
-              <span className="text-[16px] font-medium text-white sm:mb-[15px]">
+              <span className="text-16 font-medium text-white sm:mb-[15px]">
                 Email:{" "}
                 <a
                   href="mailto:Tailtalks.official@gmail.com"
-                  className="text-[14px] font-light"
+                  className="text-14 font-light"
                 >
                   Tailtalks.official@gmail.com
                 </a>
@@ -83,7 +83,7 @@ const Footer: React.FC = () => {
             <a
               href="https://t.me/tailtalkstg"
               target="_blank"
-              className="relative z-10 flex h-12 items-center justify-center rounded-2xl bg-[#1F1D2B] p-5 px-12 py-3 text-[18px] font-semibold leading-[150%] text-transparent transition-opacity duration-100 ease-in-out before:absolute before:inset-[-3px] before:z-[-1] before:rounded-2xl before:bg-gradient-to-r before:from-[#9B51E0] before:to-[#3081ED] before:content-[''] after:absolute after:inset-0 after:z-[-1] after:rounded-2xl after:bg-[#1f1d2b] after:content-[''] hover:opacity-70 sm:w-[312px] md:w-[303px] lg:w-[333px]"
+              className="relative z-10 flex h-12 items-center justify-center rounded-2xl bg-[#1F1D2B] p-5 px-12 py-3 text-18 font-semibold leading-[150%] text-transparent transition-opacity duration-100 ease-in-out before:absolute before:inset-[-3px] before:z-[-1] before:rounded-2xl before:bg-gradient-to-r before:from-[#9B51E0] before:to-[#3081ED] before:content-[''] after:absolute after:inset-0 after:z-[-1] after:rounded-2xl after:bg-[#1f1d2b] after:content-[''] hover:opacity-70 sm:w-[312px] md:w-[303px] lg:w-[333px]"
               rel="noreferrer"
             >
               <span className="bg-gradient-to-r from-[#9B51E0] to-[#3081ED] bg-clip-text text-transparent">
@@ -94,13 +94,13 @@ const Footer: React.FC = () => {
         </div>
       </div>
 
-      <div className="xs:before:hidden relative flex w-full justify-between py-[30px] pt-[35px] before:absolute before:left-0 before:top-0 before:h-px before:w-full before:bg-gradient-to-r before:from-[#9B51E0] before:to-[#3081ED]">
-        <span className="text-[14px] leading-[150%] text-white">
+      <div className="relative flex w-full justify-between py-[30px] pt-[35px] before:absolute before:left-0 before:top-0 before:h-px before:w-full before:bg-gradient-to-r before:from-[#9B51E0] before:to-[#3081ED] xs:before:hidden">
+        <span className="text-14 leading-[150%] text-white">
           © 2024 Tail Talks. All Rights Reserved.
         </span>
         <a
           href="official@tailtalks.world"
-          className="text-[14px] font-medium leading-[150%] text-white underline underline-offset-1 hover:opacity-70"
+          className="text-14 font-medium leading-[150%] text-white underline underline-offset-1 hover:opacity-70"
         >
           Privacy Policy
         </a>
