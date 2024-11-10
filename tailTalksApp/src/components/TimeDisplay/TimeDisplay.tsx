@@ -17,7 +17,7 @@ type TimeUnitProps = {
 }
 
 function calculateTimeLeft(): TimeLeftProps {
-  const finalDate = new Date("2024-10-01T00:00:00")
+  const finalDate = new Date("2025-01-01T00:00:00")
   const now = new Date()
   const difference = finalDate.getTime() - now.getTime()
 
@@ -69,11 +69,11 @@ export default function TimeDisplay() {
   }: TimeUnitProps) {
     return (
       <div
-        className={`flex flex-col items-center justify-center px-10 xs:px-5 ${
+        className={`xs:px-5 flex flex-col items-center justify-center px-10 ${
           showBorderLg ? "border-white lg:border-r" : ""
-        } ${showBorderXs ? "border-white xs:border-r" : ""} xs:w-28 lg:w-42`}
+        } ${showBorderXs ? "xs:border-r border-white" : ""} xs:w-28 lg:w-42`}
       >
-        <span className="text-60 font-semibold xl:text-70">{value}</span>
+        <span className="text-60 xl:text-70 font-semibold">{value}</span>
         <span className="text-16 font-light">
           {timeFormat(value, singular, few, many)}
         </span>
