@@ -1,7 +1,7 @@
 {
   "env": {
     "browser": true,
-    "es2021": true
+    "es2021": true,
   },
   "extends": [
     "eslint:recommended",
@@ -13,15 +13,15 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:react-hooks/recommended",
     "plugin:tailwindcss/recommended",
-    "prettier"
+    "prettier",
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
-      "jsx": true
+      "jsx": true,
     },
     "ecmaVersion": "latest",
-    "sourceType": "module"
+    "sourceType": "module",
   },
   "plugins": [
     "react",
@@ -30,7 +30,7 @@
     "react-hooks",
     "@typescript-eslint",
     "tailwindcss",
-    "prettier"
+    "prettier",
   ],
   "rules": {
     "prettier/prettier": [
@@ -40,8 +40,8 @@
         "semi": false,
         "trailingComma": "all",
         "arrowParens": "avoid",
-        "endOfLine": "auto"
-      }
+        "endOfLine": "auto",
+      },
     ],
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
@@ -50,14 +50,13 @@
     "import/no-unresolved": [
       2,
       {
-        "ignore": ["swiper/react", "swiper/modules"]
-      }
+        "ignore": ["swiper/react", "swiper/modules"],
+      },
     ],
-     "tailwindcss/no-custom-classname": "off" //кастомные классы для шрифтов
   },
   "settings": {
     "react": {
-      "version": "detect"
-    }
-  }
+      "version": "detect",
+    },
+  },
 }

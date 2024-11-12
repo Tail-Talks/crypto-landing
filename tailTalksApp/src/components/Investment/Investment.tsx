@@ -47,11 +47,11 @@ export default function Investment() {
 
   return (
     <section id="imagine_world" className="mt-36">
-      <div className="xs:mx-6 flex flex-col font-sans text-white lg:mx-10 xl:mx-48">
-        <h2 className="text-30 xs:text-20 lg:text-25 flex-wrap text-center font-semibold">
+      <div className="flex flex-col font-sans text-white xs:mx-6 lg:mx-10 xl:mx-48">
+        <h2 className="flex-wrap text-center text-30 font-semibold xs:text-20 lg:text-25">
           Хотите помочь нам построить дружелюбное пространство для питомцев?
         </h2>
-        <p className="text-16 lg:text-20 mt-5 flex-wrap text-center font-normal">
+        <p className="mt-5 flex-wrap text-center text-16 font-normal lg:text-20">
           Ваша щедрость поможет нам разработать новые функции платформы,
           поддержать благотворительные приюты для животных и сделать Tail Talks
           доступным для большего числа людей
@@ -62,7 +62,7 @@ export default function Investment() {
               <img src={investment1} alt="money icon" />
               <div className="flex flex-col">
                 <button
-                  className="text-13 lg:text-16 flex gap-3 font-normal"
+                  className="flex gap-3 text-13 font-normal lg:text-16"
                   onClick={() =>
                     handleCopy("1й номер кошелька получателя", "one")
                   }
@@ -103,7 +103,7 @@ export default function Investment() {
               <img src={investment2} alt="money icon" />
               <div className="flex flex-col">
                 <button
-                  className="text-13 lg:text-16 flex gap-3 font-normal"
+                  className="flex gap-3 text-13 font-normal lg:text-16"
                   onClick={() =>
                     handleCopy("2й номер кошелька получателя", "two")
                   }
@@ -138,7 +138,7 @@ export default function Investment() {
               <img src={investment3} alt="money icon" />
               <div className="flex flex-col">
                 <button
-                  className="text-13 lg:text-16 flex gap-3 font-normal"
+                  className="flex gap-3 text-13 font-normal lg:text-16"
                   onClick={() =>
                     handleCopy("3й номер кошелька получателя", "three")
                   }

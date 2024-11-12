@@ -30,7 +30,7 @@ const HeaderNavMenu = () => {
             FAQ
           </button>
         </li>
-        <li className="hidden xl:block">
+        <li className="hidden">
           <button className="underline-gradient hover:underline-gradient text-color relative hidden cursor-pointer text-xs font-bold leading-6 text-gray-400 transition-opacity duration-300 ease-in-out hover:opacity-70 md:text-xs">
             RU
             <img src={SmallArrow} alt="SmallArrow" className="ml-1 inline" />

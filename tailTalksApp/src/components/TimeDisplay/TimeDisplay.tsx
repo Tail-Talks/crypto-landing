@@ -69,11 +69,11 @@ export default function TimeDisplay() {
   }: TimeUnitProps) {
     return (
       <div
-        className={`xs:px-5 flex flex-col items-center justify-center px-10 ${
+        className={`flex flex-col items-center justify-center px-10 xs:px-5 ${
           showBorderLg ? "border-white lg:border-r" : ""
-        } ${showBorderXs ? "xs:border-r border-white" : ""} xs:w-28 lg:w-42`}
+        } ${showBorderXs ? "border-white xs:border-r" : ""} xs:w-28 lg:w-42`}
       >
-        <span className="text-60 xl:text-70 font-semibold">{value}</span>
+        <span className="text-60 font-semibold xl:text-70">{value}</span>
         <span className="text-16 font-light">
           {timeFormat(value, singular, few, many)}
         </span>
