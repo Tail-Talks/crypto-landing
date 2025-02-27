@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/crypto-landing-frontend/static/css/main.a2a422f7.css",
-    "main.js": "/crypto-landing-frontend/static/js/main.57e50d47.js",
+    "main.css": "/crypto-landing-frontend/static/css/main.7f934db4.css",
+    "main.js": "/crypto-landing-frontend/static/js/main.315c04b5.js",
     "static/media/mission-pic4.jpeg": "/crypto-landing-frontend/static/media/mission-pic4.12d1d5d83c455a8d84e8.jpeg",
     "static/media/mission-pic3.jpeg": "/crypto-landing-frontend/static/media/mission-pic3.c19e4b326a8c674665c7.jpeg",
     "static/media/mission-pic2.jpeg": "/crypto-landing-frontend/static/media/mission-pic2.2560de068534d02fd840.jpeg",
@@ -9,6 +9,7 @@
     "static/media/social-vc.svg": "/crypto-landing-frontend/static/media/social-vc.afe8dbaaca1d322ef81c15da16c5b0c1.svg",
     "static/media/mainDogs.png": "/crypto-landing-frontend/static/media/mainDogs.818ec2960fd8754e7bfa.png",
     "static/media/elipse-exclusive.svg": "/crypto-landing-frontend/static/media/elipse-exclusive.d99029a722422824a981.svg",
+    "static/media/investment2.png": "/crypto-landing-frontend/static/media/investment2.eb5cc1f7f56c114fa133.png",
     "static/media/social-vk.svg": "/crypto-landing-frontend/static/media/social-vk.7927c7e8bc7b3ed76429cc3025fde22a.svg",
     "static/media/social-dzen.svg": "/crypto-landing-frontend/static/media/social-dzen.d229de78fdd0d87955300cec45540ef5.svg",
     "static/media/logo.svg": "/crypto-landing-frontend/static/media/logo.518857e91d55671d195eeb15179ffdfa.svg",
@@ -25,11 +26,11 @@
     "static/media/header-small-arrow.svg": "/crypto-landing-frontend/static/media/header-small-arrow.51a9a65e4a6dc07d77404fd13a4da94b.svg",
     "static/media/philosophy-plus.svg": "/crypto-landing-frontend/static/media/philosophy-plus.c9900add1afc072ff5d6037e5e34daaf.svg",
     "static/media/philosophy-minus.svg": "/crypto-landing-frontend/static/media/philosophy-minus.dcd3e2a3af84b3055b132e01d9e09370.svg",
-    "main.a2a422f7.css.map": "/crypto-landing-frontend/static/css/main.a2a422f7.css.map",
-    "main.57e50d47.js.map": "/crypto-landing-frontend/static/js/main.57e50d47.js.map"
+    "main.7f934db4.css.map": "/crypto-landing-frontend/static/css/main.7f934db4.css.map",
+    "main.315c04b5.js.map": "/crypto-landing-frontend/static/js/main.315c04b5.js.map"
   },
   "entrypoints": [
-    "static/css/main.a2a422f7.css",
-    "static/js/main.57e50d47.js"
+    "static/css/main.7f934db4.css",
+    "static/js/main.315c04b5.js"
   ]
 }
