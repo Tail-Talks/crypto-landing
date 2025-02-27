@@ -17,7 +17,7 @@ type TimeUnitProps = {
 }
 
 function calculateTimeLeft(): TimeLeftProps {
-  const finalDate = new Date("2024-10-01T00:00:00")
+  const finalDate = new Date("2025-01-01T00:00:00")
   const now = new Date()
   const difference = finalDate.getTime() - now.getTime()
 

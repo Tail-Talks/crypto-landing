@@ -138,7 +138,7 @@ const RoadMap = () => {
   return (
     <section id="roadmap" className="xs:mt-28 lg:mt-36">
       <div className="flex flex-col font-sans text-white xs:mx-6 lg:mx-10 xl:mx-48">
-        <h2 className="mb-3 text-center text-40 font-semibold xs:mb-4 xs:text-25 lg:text-30 ">
+        <h2 className="mb-3 text-center text-40 font-semibold xs:mb-4 xs:text-25 lg:text-30">
           Дорожная карта Tail Talks 2024!
         </h2>
         <span className="mb-10 text-center text-20 font-light xs:mb-5 xs:text-16 lg:mb-7">
@@ -180,7 +180,7 @@ const RoadMap = () => {
             </div>
 
             {/* Контрольные точки */}
-            <div className="flex xs:gap-5 lg:gap-12 ">
+            <div className="flex xs:gap-5 lg:gap-12">
               {roadmapData.map((quarter, index) => (
                 <Link
                   key={quarter.id}
@@ -241,10 +241,10 @@ const RoadMap = () => {
                     <h3 className="text-20 font-semibold xs:mb-5 lg:mb-9">
                       {quarter.title}
                     </h3>
-                    <div className="rounded-sm border-2 ">
+                    <div className="rounded-sm border-2">
                       {quarter.items.map((item, idx) => (
                         <div key={idx} className="xs:mx-5 xs:my-7 lg:m-10">
-                          <h4 className="mb-3 text-left text-18 font-semibold ">
+                          <h4 className="mb-3 text-left text-18 font-semibold">
                             {item.title}
                           </h4>
                           <ul className="mt-3 list-disc text-left">

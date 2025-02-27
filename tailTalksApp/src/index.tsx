@@ -14,6 +14,7 @@ import FAQ from "./components/FAQ/FAQ"
 import Footer from "./components/Footer/Footer"
 import RoadMap from "./components/RoadMap/RoadMap"
 import Exclusive from "./components/Exclusive/Exclusive"
+import Investment from "./components/Investment/Investment"
 
 const rootElement = document.getElementById("root")
 if (rootElement) {
@@ -28,6 +29,7 @@ if (rootElement) {
       <DescTailTalks />
       <Counter />
       <Philosophy />
+      <Investment />
       <RoadMap />
       <Exclusive />
       <FAQ />
